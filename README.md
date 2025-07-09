@@ -30,8 +30,7 @@ The MARSI-R helps educators and researchers understand how students approach rea
 
 ### Adaptation Credits
 **Adapted for digital use in 2025, with permission from the authors, by:**
-- **Katie W. Biehl**
-- **West Shore Community College Instructional Design Team**
+- **Katie W. Biehl, West Shore Community College**
 
 ### Key Features
 - ✅ **Fully Accessible:** WCAG 2.1 AA compliant with screen reader support
