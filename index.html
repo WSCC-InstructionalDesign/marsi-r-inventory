@@ -121,6 +121,25 @@
             line-height: 1.4;
         }
 
+        .creative-commons {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .cc-license {
+            font-size: 0.8rem !important;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .cc-notice {
+            font-size: 0.7rem !important;
+            opacity: 0.9;
+            line-height: 1.3;
+            margin: 0;
+        }
+
         .content {
             padding: 40px 30px;
         }
@@ -603,6 +622,10 @@
             <p class="authors">By Kouider Mokhtari, Dimiter M. Dimitrov, and Carla A. Reichard</p>
             <p class="copyright">© 2018</p>
             <p class="adaptation">Adapted for digital use in 2025, with permission from the authors, by Katie W. Biehl, West Shore Community College Instructional Design Team</p>
+            <div class="creative-commons">
+                <p class="cc-license">This digital adaptation is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener" style="color: white; text-decoration: underline;">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</a></p>
+                <p class="cc-notice">You are free to share this work for non-commercial purposes only, as long as you provide appropriate attribution. No adaptations or modifications are permitted.</p>
+            </div>
         </header>
 
         <main id="main-content" class="content" role="main">
@@ -932,6 +955,13 @@
                             `).join('')}
                         </div>
                     </fieldset>
+                    ${strategy.id === 15 ? `
+                        <div style="margin-top: 15px; padding: 10px; background-color: #fef3c7; border: 1px solid #f59e0b; border-radius: 6px;">
+                            <p style="font-size: 0.9rem; color: #92400e; margin: 0; text-align: center; font-weight: 500;">
+                                <strong>Note:</strong> Please complete all 15 strategies to view your results and access export options.
+                            </p>
+                        </div>
+                    ` : ''}
                 `;
                 container.appendChild(strategyDiv);
             });
